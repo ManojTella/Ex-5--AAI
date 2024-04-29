@@ -1,7 +1,7 @@
-<H3>ENTER YOUR NAME: Manoj Guna Sundar Tella.</H3>
-<H3>ENTER YOUR REGISTER NO.212221240026.</H3>
-<H3>EX. NO.5</H3>
-<H3>DATE:</H3>
+#### ENTER YOUR NAME: Manoj Guna Sundar Tella.
+#### ENTER YOUR REGISTER NO.212221240026.
+### EX. NO.5
+### DATE:
 <H1 ALIGN =CENTER> Implementation of Kalman Filter</H1>
 ### Aim: 
 To Construct a Python Code to implement the Kalman filter to predict the position and velocity of an object.
@@ -45,7 +45,7 @@ Q = np.diag([0.1, 0.1]) # process noise covariance
 R = np.array([[1]]) # measurement noise covariance
 x0 = np.array([0, 0]) # initial state estimate
 P0 = np.diag([1, 1]) # initial error covariance
-```
+
 ```
 kf = KalmanFilter(F,H,Q,R,x0,P0)
 
@@ -61,8 +61,7 @@ for z in measurements:
     kf.predict()
     kf.update(np.array([z]))
     est_states.append(kf.x)
-```
-```
+
 # plot the true and estimated positions
 import matplotlib.pyplot as plt
 plt.plot([s[0] for s in true_states], label='true')
