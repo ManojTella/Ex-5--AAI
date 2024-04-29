@@ -2,7 +2,7 @@
 #### ENTER YOUR REGISTER NO.212221240026.
 ### EX. NO.5
 ### DATE:
-<H1 ALIGN =CENTER> Implementation of Kalman Filter</H1>
+## Implementation of Kalman Filter
 ### Aim: 
 To Construct a Python Code to implement the Kalman filter to predict the position and velocity of an object.
 ### Algorithm:
